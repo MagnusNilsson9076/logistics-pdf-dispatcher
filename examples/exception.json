@@ -1,0 +1,20 @@
+{
+  "shipment_id": "SHP-2048",
+  "recipient_email": "ops@example.com",
+  "events": [
+    {
+      "kind": "picked_up",
+      "occurred_at": "2026-09-18T06:00:00Z",
+      "location": "Suzhou warehouse",
+      "detail": "shipment accepted"
+    },
+    {
+      "kind": "exception",
+      "occurred_at": "2026-09-18T08:30:00Z",
+      "location": "Shanghai hub",
+      "detail": "address review requested"
+    }
+  ],
+  "proof_of_delivery": []
+}
+

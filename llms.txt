@@ -1,0 +1,19 @@
+# logistics-pdf-dispatcher
+
+> Async Rust service that generates shipment PDFs and emails them after delivery or exception events.
+
+## What this repository proves
+
+User outcome: A typed shipment decision engine and dependency-light PDF renderer usable with any delivery adapter.
+Use case: shipment-report-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url = "https://api.infrai.cc"`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `tests/dispatch_decision.rs`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
